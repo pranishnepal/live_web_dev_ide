@@ -74,7 +74,9 @@ function setUpEditor() {
 </head>
 
 <body>
-   <h1> Welcome to Live WebDev Editor! </h1>
+   <h1> Welcome to Live WebDev Editor :) </h1>
+   <i> Write your HTML, CSS, JS codes and see live changes! </i>
+
 </body>
 
 </html>`,
@@ -115,7 +117,7 @@ function setUpEditor() {
 
   editor_css.setValue(
     `*{
-     background-color: red;
+     background-color: #ff7171;
     }`,
     1
   );
