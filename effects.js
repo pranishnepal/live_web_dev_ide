@@ -74,7 +74,7 @@ function setUpEditor() {
 </head>
 
 <body>
-   
+   <h1> Welcome to Live WebDev Editor! </h1>
 </body>
 
 </html>`,
