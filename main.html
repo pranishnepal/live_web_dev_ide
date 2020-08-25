@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Live WebDevitor</title>
+    <!-- Semantic UI + jQuery-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="mainStyle.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ace Editor  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
+  </head>
+  <!-- Body Section -->
+  <body onload="ready()">
+    <!-- Semantic UI Container Starts -->
+    <div class="ui container">
+      <!-- Navigation Tab -->
+      <div id="navBar">
+        <div class="ui four item menu" id="switchTabBar">
+          <div id="html" class="item switchTab active">
+            <i class="html5 icon"></i>
+            HTML
+          </div>
+          <div id="css" class="item switchTab">
+            <i class="css3 alternate icon"></i>
+            CSS
+          </div>
+          <div id="js" class="item switchTab">
+            <i class="code icon"></i>
+            JavaScript
+          </div>
+          <div id="output" class="item switchTab active">
+            <i class="play circle outline icon"></i>
+            Output
+          </div>
+        </div>
+      </div>
+
+      <!-- Screens -->
+      <div id="screens">
+        <div id="htmlScreen" class="screen"></div>
+        <div id="cssScreen" class="screen hidden"></div>
+        <div id="jsScreen" class="screen hidden"></div>
+        <iframe id="outputScreen" class="screen" color="red"></iframe>
+      </div>
+
+      <!-- Semantic UI Container Ends-->
+    </div>
+
+    <!-- jQuery External Path -->
+    <script src="effects.js"></script>
+  </body>
+</html>
